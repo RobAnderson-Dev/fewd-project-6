@@ -83,9 +83,9 @@
   }
   
   .show {
+    opacity: 0;
     color: $color-dark;
     background-color: $color-bright;
-    opacity: 75%;
   }
   
   /* Keyboard */
@@ -158,7 +158,7 @@
   }
 
   .fade {
-    transition: $transition;
+    opacity: 75%;
   }
   
   #timer {

@@ -45,9 +45,9 @@ button {
   font-size: 20px;
   background-color: #E5E5E5;
   border-radius: 5px;
-  -webkit-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .main-container {
@@ -87,9 +87,9 @@ button {
 }
 
 .show {
+  opacity: 0;
   color: #000000;
   background-color: #e5b003;
-  opacity: 75%;
 }
 
 /* Keyboard */
@@ -160,7 +160,7 @@ button {
 }
 
 .fade {
-  transition: all 0.2s ease-in-out;
+  opacity: 75%;
 }
 
 #timer {

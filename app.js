@@ -32,13 +32,14 @@ function getRandomPhraseAsArray(array) {
 assign class attribute, append to <ul> */
 function addPhraseToDisplay(array) {
 
+
     array.forEach( (character) => {
         const listItem = document.createElement('li');
         listItem.textContent = character;
         if (character === ' ') {
             listItem.className = 'space';
         } else {
-            listItem.className = 'letter';
+            listItem.classList.add('letter');
         }
         phrase.firstElementChild.appendChild(listItem);
     });
@@ -54,6 +55,8 @@ function checkLetter(button) {
     for (let i=0; i<phraseListItems.length; i++) {
         if (button.textContent === phraseListItems[i].textContent.toLowerCase()) {
             phraseListItems[i].classList.add('show');
+            phraseListItems[i].style.transition = "all 0.5s";
+            phraseListItems[i].classList.add('fade');
             match = button.textContent;
         }
     }
