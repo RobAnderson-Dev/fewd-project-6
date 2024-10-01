@@ -64,13 +64,17 @@ function checkLetter(button) {
 function isWin(missed, phraseLetterCount, displayLetterCount) {
 
     if (phraseLetterCount === displayLetterCount) {
-        resetGame();
-        endGame('win', winMessage);
+        setTimeout(() => {
+            resetGame();
+            endGame('win', winMessage);
+        }, 1*1000);
         // clearInterval(interval);
         // clearTimeout();
     } else if (missed > 4) {
-        resetGame();
-        endGame('lose', loseMessage);
+        setTimeout(() => {
+            resetGame();
+            endGame('lose', loseMessage);
+        }, 1*1000);
         // clearInterval(interval);
         // clearTimeout();
     }
