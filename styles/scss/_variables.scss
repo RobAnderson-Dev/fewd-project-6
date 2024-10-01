@@ -1,0 +1,29 @@
+/* Variables */
+
+@import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
+
+/* Background */
+$background-image: url("../../images/retro_background.jpg");
+/* image source:  https://cdn.wallpapersafari.com/44/62/GsVB7j.jpg */
+
+/* Fonts */
+$font-family: "Syncopate", sans-serif;
+$font-style: normal;
+$font-size-large: 60px;
+$font-size-medium: 20px;
+$font-weight-bold: 700;
+$font-weight-light: 400;
+
+/* Colors */
+$color-start: #5b85b7;
+$color-neutral: #445069;
+$color-neutral-light: #D2D2D2;
+$color-bright: #e5b003;
+$color-dark: #000000;
+$color-keys: #37474F;
+$color-keys-light: #E5E5E5;
+$color-win: #37474F;
+$color-lose: #900C23;
+
+/* Transitions */
+$transition: all .2s ease-in-out;

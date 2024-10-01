@@ -1,0 +1,174 @@
+/* main */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: $background-image;
+    background-size: cover;
+    font-family: $font-family;
+    font-weight: $font-weight-bold;
+    justify-content: space-evenly;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+  }
+  
+  li, ol, ul {
+    padding: 0;
+    display: inline-block;
+  }
+  
+  h2 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+    font-style: $font-style;
+    margin: 0;
+  }
+  
+  button {
+    margin: 6px;
+    border: 1px solid transparent;
+    padding: .5rem 1rem;
+    color: $color-keys;
+    font-family: $font-family;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-medium;
+    background-color: $color-keys-light;
+    border-radius: 5px;
+    -webkit-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    max-height: 900px;
+    text-align: center;
+  }
+  
+  .section {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  /* Title */
+  
+  .header {
+    color: $color-start;
+  }
+  
+  /* Phrase */
+  
+  .letter {
+    font-size: $font-size-medium;
+    height: 65px;
+    width: 65px;
+    padding: 20px 1px 0 1px;
+    margin-right: 2px;
+    color: transparent;
+    background: $color-neutral-light;
+    opacity: 25%;
+    border-radius: 5px;
+  }
+  
+  .space {
+    width: 15px;
+  }
+  
+  .show {
+    color: $color-dark;
+    background-color: $color-bright;
+    opacity: 75%;
+  }
+  
+  /* Keyboard */
+  
+  .keyrow {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .chosen {
+    background: $color-neutral;
+    border-radius: 5px;
+    font-size: $font-size-medium;
+    color: $color-neutral-light;
+    opacity: 25%;
+  }
+  
+  .btn__reset {
+    padding: 8px;
+    margin: 50px auto;
+    background: $color-neutral-light;
+    border-radius: 5px;
+    font-size: $font-size-medium;
+  }
+  
+  /* Overlay */
+  
+  #overlay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    color: $color-dark;
+    justify-content: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 5px;
+  }
+  
+  .title {
+    color: $color-neutral-light;
+  }
+  
+  .start {
+    background-color: $color-dark;
+  }
+  
+  .start a {
+    color: $color-win;
+    color: $color-dark;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-medium;
+  }
+  
+  .win {
+    background-color: $color-win;
+  }
+  
+  .win a {
+    color: $color-win;
+  }
+  
+  .lose {
+    background-color: $color-lose;
+  }
+  
+  .lose a {
+    color: $color-lose;
+  }
+
+  .fade {
+    transition: $transition;
+  }
+  
+  #timer {
+    color: $color-neutral-light;
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+  }
+
+ #hint {
+    color: $color-bright;
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+  }
