@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap');
 
 /* Background */
-$background-image: url("../../images/retro_background.jpg");
+$background-image: url("../../images/tron_background.jpg");
 /* image source:  https://cdn.wallpapersafari.com/44/62/GsVB7j.jpg */
 
 /* Fonts */
@@ -19,11 +19,11 @@ $color-start: #5b85b7;
 $color-neutral: #445069;
 $color-neutral-light: #D2D2D2;
 $color-bright: #e5b003;
-$color-dark: #000000;
+$color-dark: #02141E;
 $color-keys: #37474F;
 $color-keys-light: #E5E5E5;
-$color-win: #37474F;
-$color-lose: #900C23;
+$color-win: #021F29;
+$color-lose: #9F1A03;
 
 /* Transitions */
 $transition: all 0.5s ease-in-out;

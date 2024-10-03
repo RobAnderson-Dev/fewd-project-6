@@ -22,7 +22,7 @@
   
   h2 {
     margin: 0;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-size: $font-size-large;
     font-weight: $font-weight-bold;
     font-style: $font-style;
@@ -61,7 +61,7 @@
   /* Title */
   
   .header {
-    color: $color-start;
+    color: $color-bright;
   }
   
   /* Phrase */
@@ -171,4 +171,8 @@
     color: $color-bright;
     font-size: $font-size-large;
     font-weight: $font-weight-bold;
+  }
+
+  .tries {
+    color: $color-lose;
   }

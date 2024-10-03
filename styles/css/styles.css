@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: url("../../images/retro_background.jpg");
+  background-image: url("../../images/tron_background.jpg");
   background-size: cover;
   font-family: "Syncopate", sans-serif;
   font-weight: 700;
@@ -28,7 +28,6 @@ li, ol, ul {
 
 h2 {
   margin: 0;
-  text-transform: uppercase;
   font-size: 60px;
   font-weight: 700;
   font-style: normal;
@@ -66,7 +65,7 @@ button {
 
 /* Title */
 .header {
-  color: #5b85b7;
+  color: #e5b003;
 }
 
 /* Phrase */
@@ -88,7 +87,7 @@ button {
 
 .show {
   opacity: 0;
-  color: #000000;
+  color: #02141E;
   background-color: #e5b003;
 }
 
@@ -119,7 +118,7 @@ button {
   display: flex;
   flex-direction: column;
   position: fixed;
-  color: #000000;
+  color: #02141E;
   justify-content: center;
   top: 0;
   bottom: 0;
@@ -133,30 +132,30 @@ button {
 }
 
 .start {
-  background-color: #000000;
+  background-color: #02141E;
 }
 
 .start a {
-  color: #37474F;
-  color: #000000;
+  color: #021F29;
+  color: #02141E;
   font-weight: 700;
   font-size: 20px;
 }
 
 .win {
-  background-color: #37474F;
+  background-color: #021F29;
 }
 
 .win a {
-  color: #37474F;
+  color: #021F29;
 }
 
 .lose {
-  background-color: #900C23;
+  background-color: #9F1A03;
 }
 
 .lose a {
-  color: #900C23;
+  color: #9F1A03;
 }
 
 .fade {
@@ -173,6 +172,10 @@ button {
   color: #e5b003;
   font-size: 60px;
   font-weight: 700;
+}
+
+.tries {
+  color: #9F1A03;
 }
 
 /*# sourceMappingURL=styles.css.map */

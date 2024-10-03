@@ -8,16 +8,16 @@ const heading = document.querySelector("#overlay h2");
 const ul = document.querySelector("#phrase ul");
 
 const timeLimit = 30;
-const winMessage = "advance";
+const winMessage = "face the games";
 const loseMessage = "de-rezzed";
 
 let missed = 0;
 const phrases = [
-    "Stupid is as stupid does",
-    "Bubba Gump",
-    "I have to pee",
-    "Run Forest run",
-    "Seats taken"
+    "The Grid",
+    "Master Control Program",
+    "Lightcycle Race",
+    "Identity Disc",
+    "Code is our language"
 ];
 
 /* FUNCTIONS ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
@@ -110,7 +110,7 @@ function resetGame() {
     let html = "";
     for (let i=0; i<5; i++) {
         html += `<li class="tries">
-        <img src="images/liveHeart.png" height="35px" width="30px">
+        <img src="images/redHeart.png" width="48" height="48">
         </li>`;
     }
     hearts.innerHTML = html;
@@ -153,9 +153,13 @@ keyboard.addEventListener("click", (e) => {
     if (e.target.tagName === "BUTTON" && e.target.className !== "chosen") {
         e.target.className = "chosen";
         const checkResult = checkLetter(e.target);
+        const lines = document.querySelectorAll("#scoreboard li");
+        const lostHeart = `<img src="images/yellowHeart.png" width="48" height="48">`;
+        let index = missed;
         if (checkResult === null) {
-            document.querySelector("#scoreboard ol").lastElementChild.remove();
+            lines[index].innerHTML = lostHeart;
             missed += 1;
+            index += 1;
         }
     }
     const phraseLetterCount = document.querySelectorAll("#phrase li.letter").length;
